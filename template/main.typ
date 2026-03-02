@@ -123,4 +123,4 @@
 )
 
 == Skills
-- *Languages, Tools, etc.*: Python, Git, Github, Linux (Debian, Red Hat), Docker, Google Cloud Platform, AWS, Jira, Linear, Coiled,LLM Prompt Engineering, Markdown, PALM (Computational Fluid Dynamics), Data Visualization, Data Analysis, Statistical Analysis, Data Pipelining and ETL, Data Quality and Governance, Multidimensional Arrays (Zarr, netCDF, GRIB), SQL, LaTeX, Typst
+- *Languages, Tools, etc.*: Python, Git, Github, Linux (Debian, Red Hat, CentOS), HPC, SLURM, Docker, Google Cloud Platform, AWS, Jira, Linear, Coiled, LLM Prompt Engineering, Markdown, PALM (Computational Fluid Dynamics), Data Visualization, Data Analysis, Statistical Analysis, Data Pipelining and ETL, Data Quality and Governance, Multidimensional Arrays (Zarr, netCDF, GRIB, Icechunk, Arraylake), SQL, LaTeX, Typst, uv, pixi, dagster, Dependency Injection
