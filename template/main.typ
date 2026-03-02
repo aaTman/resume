@@ -1,13 +1,14 @@
 #import "@preview/basic-resume:0.2.9": *
 
 // Put your personal information here, replacing mine
-#let name = "Stephen Xu"
-#let location = "San Diego, CA"
-#let email = "stxu@hmc.edu"
-#let github = "github.com/stuxf"
-#let linkedin = "linkedin.com/in/stuxf"
-#let phone = "+1 (xxx) xxx-xxxx"
-#let personal-site = "stuxf.dev"
+#let name = "Taylor Mandelbaum"
+#let pronouns = "He/Him"
+#let location = "Nyack, NY"
+#let email = "mandelbaum.taylor@gmail.com"
+#let github = "github.com/aaTman"
+#let linkedin = "linkedin.com/in/tmandelb"
+#let phone = "+1 (678) 468-5789"
+#let personal-site = ""
 
 #show: resume.with(
   author: name,
@@ -19,122 +20,96 @@
   github: github,
   linkedin: linkedin,
   phone: phone,
+  pronouns: pronouns,
   personal-site: personal-site,
   accent-color: "#26428b",
-  font: "New Computer Modern",
+  font: "PT Sans",
   paper: "us-letter",
   author-position: left,
   personal-info-position: left,
 )
 
 /*
-* Lines that start with == are formatted into section headings
-* You can use the specific formatting functions if needed
-* The following formatting functions are listed below
-* #edu(dates: "", degree: "", gpa: "", institution: "", location: "", consistent: false)
-* #work(company: "", dates: "", location: "", title: "")
-* #project(dates: "", name: "", role: "", url: "")
-* certificates(name: "", issuer: "", url: "", date: "")
-* #extracurriculars(activity: "", dates: "")
-* There are also the following generic functions that don't apply any formatting
-* #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
-* #generic-one-by-two(left: "", right: "")
-*/
-== Education
-
-#edu(
-  institution: "Harvey Mudd College",
-  location: "Claremont, CA",
-  dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
-  degree: "Bachelor's of Science, Computer Science and Mathematics",
-
-  // Uncomment the line below if you want edu formatting to be consistent with everything else
-  // consistent: true
-)
-- Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
-- Relevant Coursework: Data Structures, Program Development, Microprocessors, Abstract Algebra I: Groups and Rings, Linear Algebra, Discrete Mathematics, Multivariable & Single Variable Calculus, Principles and Practice of Comp Sci
+ * Lines that start with == are formatted into section headings
+ * You can use the specific formatting functions if needed
+ * The following formatting functions are listed below
+ * #edu(dates: "", degree: "", gpa: "", institution: "", location: "", consistent: false)
+ * #work(company: "", dates: "", location: "", title: "")
+ * #project(dates: "", name: "", role: "", url: "")
+ * certificates(name: "", issuer: "", url: "", date: "")
+ * #extracurriculars(activity: "", dates: "")
+ * There are also the following generic functions that don't apply any formatting
+ * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
+ * #generic-one-by-two(left: "", right: "")
+ */
 
 == Work Experience
 
 #work(
-  title: "Subatomic Shepherd and Caffeine Connoisseur",
-  location: "Atomville, CA",
-  company: "Microscopic Circus, Schrodinger's University",
-  dates: dates-helper(start-date: "May 2024", end-date: "Present"),
+  title: "Software Engineer",
+  location: "Remote",
+  company: "Brightband",
+  dates: dates-helper(start-date: "Nov 2024", end-date: "Present"),
 )
-- Played God with tiny molecules, making them dance to uncover the secrets of the universe
-- Convinced high-performance computers to work overtime without unions, reducing simulation time by 50%
-- Wowed a room full of nerds with pretty pictures of invisible things and imaginary findings
+- Science co-lead and sole developer for ExtremeWeatherBench, a benchmarking suite for extreme weather prediction
+- Produced and optimized novel verification and validation metrics for AI and numerical weather prediction models
+- Aligned scope and deliverables with multiple stakeholders from the National Severe Storms Laboratory (NSSL), the National Oceanic and Atmospheric Administration (NOAA), The Bill and Melinda Gates Foundation, and the European Center for Medium-Range Weather Forecasts (ECMWF)
 
 #work(
-  title: "AI Wrangler and Code Ninja",
-  location: "Silicon Mirage, CA",
-  company: "Organic Stupidity Startup",
-  dates: dates-helper(start-date: "Dec 2023", end-date: "Mar 2024"),
+  title: "Senior Data Scientist",
+  location: "Remote",
+  company: "LineVision",
+  dates: dates-helper(start-date: "Oct 2021", end-date: "Oct 2024"),
 )
-- Taught robots to predict when (and how much!) humans will empty their wallets at the doctor's office
-- Developed HIPAA-compliant digital signatures, because doctors' handwriting wasn't illegible enough already
-- Turned spaghetti code into a gourmet dish, making other interns drool with envy
+- Developed and operationalized computational fluid dynamics system using Python, Amazon Web Services and PALM. Utilized for all customers in pre-sales and customer integration, reducing incoming wind error by over 50%
+- Developed and implemented end-to-end strategy to guide company on integration of weather data into all business products
+- Built out and implemented uncertainty quantification methodology for all customer-facing data, providing all customers with relevant estimates of forecast uncertainty
+- Provided technical domain expertise to prospective and existing customers to help them understand the intersection of weather data and dynamic line rating outputs and uncertainty
+- Spearheaded verification and validation initiative for two distinct third-party weather provider integrations
+- Co-wrote a patent (US20230400497A1) detailing monitoring of wind speeds using transmission line movement
 
 #work(
-  title: "Digital Playground Architect",
-  location: "The Cloud",
-  company: "Pixels & Profit Interactive",
-  dates: dates-helper(start-date: "Jun 2020", end-date: "May 2023"),
+  title: "Data Scientist",
+  location: "White Plains, NY",
+  company: "New York Power Authority",
+  dates: dates-helper(start-date: "Jun 2018", end-date: "Mar 2021"),
 )
-- Scaled user base from 10 to 2000+, accidentally becoming a small wealthy nation in the process
-- Crafted Bash scripts so clever they occasionally made other engineers weep with joy
-- Automated support responses, reducing human interaction to a level that would make introverts proud
-- Built a documentation site that actually got read, breaking the ancient RTFM curse
+- Developed a weather-normalized load analysis and forecasting model for regional load patterns to communicate impacts of COVID-19 on the grid, adopted by the NYPA leadership team
+- Developed a meter-level load forecasting model using a gradient boosted tree (LightGBM) model that was operationalized for dozens of customers
+- Built, tuned, and deployed a mixture density network for combustion turbine heat rates to determine optimal operation, increasing accuracy by over 10%
 
-#work(
-  title: "Code Conjurer Intern",
-  location: "Silicon Suburb, CA",
-  company: "Bits & Bytes Consulting",
-  dates: dates-helper(start-date: "Jun 2022", end-date: "Aug 2022"),
-)
-- Developed a cross-platform mobile app that turned every user into a potential paparazzi
-- Led a security overhaul, heroically saving the company from the menace of "password123"
-
-== Projects
+== Projects and Extras
 
 #project(
-  name: "Hyperschedule",
-  // Role is optional
-  role: "Maintainer",
+  name: "ExtremeWeatherBench",
   // Dates is optional
-  dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
+  dates: dates-helper(start-date: "Nov 2024", end-date: "Present"),
   // URL is also optional
-  url: "hyperschedule.io",
+  url: "github.com/brightbandtech/extremeweatherbench",
 )
-- Maintain open-source scheduler used by 7000+ users at the Claremont Consortium with TypeScript, React and MongoDB
-  - Manage PR reviews, bug fixes, and coordinate with college for releasing scheduling data and over \$1500 of yearly funding
-- Ensure 99.99% uptime during peak loads of 1M daily requests during course registration through redundant servers
+- Identify and catalog extreme weather events from across the globe including heatwaves, cold snaps, severe convective events, and others extensible by developers and end users
+- Leveraged state of the art tooling in cloud-optimized multidimensional array storage and distributed computing to enable fast, scalable, and reproducible weather prediction model runs
 
-== Extracurricular Activities
 
 #extracurriculars(
-  activity: "Capture The Flag Competitions",
-  dates: dates-helper(start-date: "Jan 2021", end-date: "Present"),
+  activity: "Treasurer, Village of Nyack Housing Authority (VONHA)",
+  dates: dates-helper(start-date: "Aug 2024", end-date: "Present"),
 )
-- Founder of Les Amateurs (#link("https://amateurs.team")[amateurs.team]), currently ranked \#4 US, \#33 global on CTFTime (2023: \#4 US, \#42 global)
-- Organized AmateursCTF 2023 and 2024, with 1000+ teams solving at least one challenge and \$2000+ in cash prizes
-  - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
-- Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
+- Appointed to help oversee the Housing Authority's \$3M+ budget, voted in as Treasurer in March 2025
+- Built a streamlined process for the Village of Nyack and State of New York Department of Housing and Community Renewal to review and approve the Housing Authority budget
+- Work alongside other board members and Executive Director to ensure the Housing Authority is run efficiently and effectively
 
-// #extracurriculars(
-//   activity: "Science Olympiad Volunteering",
-//   dates: "Sep 2023 --- Present"
-// )
-// - Volunteer and write tests for tournaments, including LA Regionals and SoCal State \@ Caltech
+== Education
 
-// #certificates(
-//   name: "OSCP",
-//   issuer: "Offensive Security",
-//   // url: "",
-//   date: "Oct 2024",
-// )
+#edu(
+  institution: "Stony Brook University",
+  location: "Stony Brook, NY",
+  dates: dates-helper(start-date: "Aug 2013", end-date: "May 2018"),
+  degree: "M.Sc. Atmospheric and Oceanic Sciences",
+
+  // Uncomment the line below if you want edu formatting to be consistent with everything else
+  consistent: true,
+)
 
 == Skills
-- *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
-- *Technologies*: React, Astro, Svelte, Tailwind CSS, Git, UNIX, Docker, Caddy, NGINX, Google Cloud Platform
+- *Languages, Tools, etc.*: Python, Git, Github, Linux (Debian, Red Hat), Docker, Google Cloud Platform, AWS, Jira, Linear, Coiled,LLM Prompt Engineering, Markdown, PALM (Computational Fluid Dynamics), Data Visualization, Data Analysis, Statistical Analysis, Data Pipelining and ETL, Data Quality and Governance, Multidimensional Arrays (Zarr, netCDF, GRIB), SQL, LaTeX, Typst

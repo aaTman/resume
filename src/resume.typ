@@ -23,7 +23,6 @@
 
   // Sets document metadata
   set document(author: author, title: author)
-
   // Document-wide formatting, including font and margins
   set text(
     // LaTeX style font
@@ -31,7 +30,8 @@
     size: font-size,
     lang: lang,
     // Disable ligatures so ATS systems do not get confused when parsing fonts.
-    ligatures: false
+    ligatures: false,
+    stretch: 100%
   )
 
   // Reccomended to have 0.5in margin on all sides
