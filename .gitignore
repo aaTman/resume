@@ -1,0 +1,4 @@
+.DS_Store
+
+# Don't include pdf's in the repo
+*.pdf
