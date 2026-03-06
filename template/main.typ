@@ -51,7 +51,7 @@
   company: "University of Oklahoma",
   dates: dates-helper(start-date: "Nov 2025", end-date: "Present"),
 )
-- Rebuilt a stale ML model, FrontFinder, and its pipeline for front prediction utilized by NOAA and The Weather Company for regional and global analysis to improve reproducibility and readability using dependency injection and yaml-based configuration
+- Rebuilt a ML model, FrontFinder, and its pipeline for front prediction utilized by NOAA and The Weather Company for regional and global analysis to improve reproducibility and readability using dependency injection and yaml-based configuration
 - Retrained and analyzed the model with improved codebase, allowing for rapid ablation studies and analysis of performance
 - Developed roadmap with stakeholders to implement new features to improve the model's accuracy and reliability
 - Worked with stakeholders at the National Hurricane Center (NHC) to refine useful features for model improvement
