@@ -23,11 +23,15 @@
   pronouns: pronouns,
   personal-site: personal-site,
   accent-color: "#26428b",
-  font: "PT Sans",
+  font: "Zalando Sans",
   paper: "us-letter",
+  author-font-size: 18pt,
+  font-size: 9.75pt,
   author-position: left,
   personal-info-position: left,
 )
+
+#set text(weight: "light")
 
 /*
  * Lines that start with == are formatted into section headings
@@ -89,10 +93,10 @@
 == Projects and Extras
 
 #extracurriculars(
-  activity: "Treasurer, Village of Nyack Housing Authority (VONHA)",
+  activity: "Chairperson, Village of Nyack Housing Authority (VONHA)",
   dates: dates-helper(start-date: "Aug 2024", end-date: "Present"),
 )
-- Appointed to help oversee the Housing Authority's \$3M+ budget, voted in as Treasurer in March 2025
+- Appointed to help oversee the Housing Authority's \$3M+ budget, voted in as Treasurer in March 2025, Chair in March 2026
 - Built a streamlined process for the Village of Nyack and State of New York Department of Housing and Community Renewal to review and approve the Housing Authority budget
 - Work alongside other board members and Executive Director to ensure the Housing Authority is run efficiently and effectively
 

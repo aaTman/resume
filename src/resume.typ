@@ -13,7 +13,7 @@
   personal-site: "",
   orcid: "",
   accent-color: "#000000",
-  font: "New Computer Modern",
+  font: "Zalando Sans",
   paper: "us-letter",
   author-font-size: 20pt,
   font-size: 10pt,
@@ -25,7 +25,6 @@
   set document(author: author, title: author)
   // Document-wide formatting, including font and margins
   set text(
-    // LaTeX style font
     font: font,
     size: font-size,
     lang: lang,
@@ -46,7 +45,7 @@
 
   // Small caps for section titles
   show heading.where(level: 2): it => [
-    #pad(top: 0pt, bottom: -10pt, [#smallcaps(it.body)])
+    #pad(top: 0pt, bottom: -10pt, [#text(weight: "bold")[#smallcaps(it.body)]])
     #line(length: 100%, stroke: 1pt)
   ]
 
@@ -62,11 +61,7 @@
   // Name will be aligned left, bold and big
   show heading.where(level: 1): it => [
     #set align(author-position)
-    #set text(
-      weight: 700,
-      size: author-font-size,
-    )
-    #pad(it.body)
+    #pad(text(weight: "bold", size: author-font-size, it.body))
   ]
 
   // Level 1 Heading

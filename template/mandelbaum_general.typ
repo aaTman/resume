@@ -23,11 +23,15 @@
   pronouns: pronouns,
   personal-site: personal-site,
   accent-color: "#26428b",
-  font: "PT Sans",
+  font: "Zalando Sans",
   paper: "us-letter",
+  author-font-size: 18pt,
+  font-size: 9.5pt,
   author-position: left,
   personal-info-position: left,
 )
+
+#set text(weight: "light")
 
 /*
  * Lines that start with == are formatted into section headings
